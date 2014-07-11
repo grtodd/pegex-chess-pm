@@ -1,43 +1,18 @@
-use Pegex;
+use lib 'lib';
+use Pegex::Parser;
+use Chess::Grammar;
+use Chess::Data;
+use IO::All;
 use XXX;
 
-# Pegex Grammar
-my $grammar = <<'...';
+my $parser = Pegex::Parser->new(
+    grammar => Chess::Grammar->new,
+    receiver => Chess::Data->new,
+    debug => 1,
+);
 
-chess-board: <row>8
+my $input = io('test/board1.chess')->all;
 
-row: -<position>8 EOL
+my $data = $parser->parse($input);
 
-position: / ([rRhHbBqQkKpP SPACE]) /
-...
-
-# Receiver / Action class
-{
-    package Chess;
-    use Pegex::Base;
-    extends 'Pegex::Tree';
-
-    sub got_row {
-        my ($self, $got) = @_;
-        [ map { s/ /_/; $_ } @$got ];
-    }
-}
-
-# Input to parse
-my $input = <<'...';
-RP    pr
-HP    ph
-BP    pb
-KP    pk
-QP    pq
-BP    pb
-HP    ph
-RP    pr
-...
-
-# Try turning on the debug!
-# $Pegex::Parser::Debug = 1;
-
-# Parse the input according to the Grammar, and the Receiver turns it into
-# what you want. XXX is just like 'die YAML::Dump ...':
-XXX pegex($grammar, 'Chess')->parse($input);
+XXX $data;

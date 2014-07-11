@@ -1,1 +1,42 @@
+Pegex Chess Parser
+==================
+
 A sample chess board parser in Pegex.
+
+= Files
+
+- Chess.pl              :: A script to run the parser
+- share/chess.pgx       :: The Pegex grammar file
+- lib/Chess/Grammar.pm  :: The Chess grammar class
+- lib/Chess/Data.pm     :: The Receiver class that does somethings with parse info.
+- test/board1.chess     :: A sample text chess board
+
+= Compiling the chess.pgx into lib/Chess/Grammar.pm
+
+There are 3 ways you can compile the grammer file into a class:
+
+- Permanment way:
+
+  Change the grammar and run:
+
+    perl -Ilib -MChess::Grammar=compile
+
+  This will take the file from the `file` attribute, compile it and replace
+  the `make_tree` subroutine contents. This is a pain to do during
+  development, but a good way to finalize the Grammar. Pegex will be fastest
+  this way too.
+
+- Dynamic way
+
+  Delete of comment out the `make_tree` sub. Then the grammar will recompile
+  every time. This is slow but nice for when you are constantly changing the
+  grammar.
+
+- Combination way
+
+  If you export this variable in your shell:
+
+    export PERL_PEGEX_AUTO_COMPILE=1
+
+  Then the chess.pgx file will recompile into lib/Chess/Grammar.pm every run.
+  This is super easy and informative. Maybe a tiny bit slower runtime.

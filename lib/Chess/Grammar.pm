@@ -6,6 +6,12 @@ extends 'Pegex::Grammar';
 
 use constant file => 'share/chess.pgx';
 
+# To update this grammar, make changes to share/chess.pgx, then run this
+# command:
+#
+#   perl -Ilib -MChess::Grammar=compile
+#
+
 sub make_tree {
   {
     '+grammar' => 'chess',

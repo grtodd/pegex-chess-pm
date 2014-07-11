@@ -4,7 +4,7 @@ package Pegex::Chess::Grammar;
 use Pegex::Base;
 extends 'Pegex::Grammar';
 
-use constant file => 'share/chess.pgx';
+use constant file => 'ext/chess-pgx/chess.pgx';
 
 # To update this grammar, make changes to share/chess.pgx, then run this
 # command:

@@ -1,4 +1,4 @@
-package Chess::Data;
+package Pegex::Chess::Data;
 use Pegex::Base;
 extends 'Pegex::Tree';
 

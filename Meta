@@ -1,0 +1,35 @@
+=meta: 0.0.1
+
+name: Pegex-Chess
+version: 0.0.1
+abstract: Chess Board Parser in Pegex
+homepage: http://pegex.org
+
+license: perl
+copyright: 2014. Ingy döt Net.
+author:
+  name: Ingy döt Net
+  email: ingy@cpan.org
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+  homepage: http://ingy.net
+
+requires:
+  perl: 5.8.1
+  Pegex: 0.39
+
+test:
+  requires:
+    IO::All: 0
+
+devel:
+  git: git@github.org/ingydotnet/pegex-chess-pm
+  bug: https://github.com/ingydotnet/pegex-chess-pm/issues/
+  irc: irc.freenode.net#pegex
+
+branch: cpan
+
+=travis:
+  type: perl
+  irc: irc.freenode.net#pegex

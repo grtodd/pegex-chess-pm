@@ -1,0 +1,7 @@
+%grammar chess
+
+chess-board: <row>8
+
+row: -<position>8 EOL
+
+position: / ([rRhHbBqQkKpP SPACE]) /

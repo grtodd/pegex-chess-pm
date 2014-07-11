@@ -1,0 +1,28 @@
+{
+   "+grammar" : "chess",
+   "+toprule" : "chess_board",
+   "EOL" : {
+      ".rgx" : "\\r?\\n"
+   },
+   "chess_board" : {
+      "+max" : 8,
+      "+min" : 8,
+      ".ref" : "row"
+   },
+   "position" : {
+      ".rgx" : "([rRhHbBqQkKpP\\ ])"
+   },
+   "row" : {
+      ".all" : [
+         {
+            "+max" : 8,
+            "+min" : 8,
+            "-flat" : 1,
+            ".ref" : "position"
+         },
+         {
+            ".ref" : "EOL"
+         }
+      ]
+   }
+}

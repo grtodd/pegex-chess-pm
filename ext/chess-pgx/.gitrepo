@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:ingydotnet/chess-pgx.git
+	branch = master
+	commit = 7f20d3353704f8c1d0b6906c959329a26033862a
+	parent = 68d617d2ea491d6c086caf9542a193ffcc2114c5
+	cmdver = 0.1.0

@@ -1,7 +1,7 @@
 =meta: 0.0.1
 
 name: Pegex-Chess
-version: 0.0.2
+version: 0.0.3
 abstract: Chess Board Parser in Pegex
 homepage: http://pegex.org
 
@@ -24,8 +24,8 @@ test:
     IO::All: 0
 
 devel:
-  git: git@github.org/ingydotnet/pegex-chess-pm
-  bug: https://github.com/ingydotnet/pegex-chess-pm/issues/
+  git: https://github.com/ingydotnet/pegex-chess-pm
+  bug: https://github.com/ingydotnet/pegex-chess-pm/issues
   irc: irc.freenode.net#pegex
 
 branch: cpan

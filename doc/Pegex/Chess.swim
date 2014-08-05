@@ -3,6 +3,8 @@ Pegex::Chess
 
 A sample chess board parser in Pegex.
 
+<badge travis coveralls ingydotnet/pegex-chess-pm>
+
 = Synopsis
 
   use Pegex::Chess;

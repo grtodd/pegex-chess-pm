@@ -10,6 +10,10 @@ See http://github.com/ingydotnet/swim-pm#readme
 
 Pegex::Chess - A sample chess board parser in Pegex.
 
+=for html
+<a href="https://travis-ci.org/ingydotnet/pegex-chess-pm"><img src="https://travis-ci.org/ingydotnet/pegex-chess-pm.png" alt="pegex-chess-pm"></a>
+<a href="https://coveralls.io/r/ingydotnet/pegex-chess-pm?branch=master"><img src="https://coveralls.io/repos/ingydotnet/pegex-chess-pm/badge.png" alt="pegex-chess-pm"></a>
+
 =head1 SYNOPSIS
 
     use Pegex::Chess;

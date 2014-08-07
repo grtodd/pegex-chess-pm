@@ -1,5 +1,5 @@
 package Pegex::Chess;
-our $VERSION = '0.0.5';
+our $VERSION = '0.0.6';
 
 use Pegex::Base;
 use Pegex::Parser;

@@ -1,4 +1,9 @@
 ---
+version: 0.0.8
+date:    Sat Aug 16 11:47:36 PDT 2014
+changes:
+- Meta 0.0.2
+---
 version: 0.0.7
 date:    Fri Aug 15 20:16:37 PDT 2014
 changes:
